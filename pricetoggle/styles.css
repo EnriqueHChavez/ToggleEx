@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+      background-image: url('file:///C:/Users/ehern/Desktop/pricetoggle/images/bg-bottom.svg');
+      background-image: url('file:///C:/Users/ehern/Desktop/pricetoggle/images/bg-bottom.svg');
+      background-repeat: no-repeat, 
+                   no-repeat;
+                 
+                   
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column1 , .column2 , .column3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    border-radius: 25px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1 {
+      text-align: center;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #8f96f0;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #8f96f0;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle {
+      text-align: center;
+  }
+  
+
+  
+
+  .anually {
+    padding: 5px 15px 0 0;
+    color: #c4c4d0;
+   
+  }
+  .monthly {
+      padding : 5px 0 0 15px;
+      color: #c4c4d0;
+  }
+.row {
+    padding-top: 30px;
+    width: 900px;
+    margin: auto;
+width: 60%;
+text-align: center;
+padding: 20px;
+}
+  
+.column2 {
+    height: 425px;
+ 
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 48px;
+    
+  }
+
+  .button2 {
+      background-color: #6f73de;
+      
+    } 
+
+  .price{
+      font-size: 36px;
+  }
+
+  #middleSection {
+      color: #ffffff;
+      
+  }
+
+  .button3 {
+      background-color: #ffffff;
+      color:#6f73de ;
+      font-weight: 900;
+  }
+
+  .weight {
+      font-weight: 900;
+  }
+
+  .dollarSign {
+      font-size: 28px;
+  }
+  .parLR {
+      color: #70717e;
+  }
+
+  .mainTitle {
+      color:#70717e;
+      padding-top: 30px;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .column1 , .column2 , .column3  {
+      width: 100%;
+    }
+  }
